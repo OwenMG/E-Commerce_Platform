@@ -25,7 +25,7 @@ Product.init(
       allowNull: false,
       validate: {
         isDecimal: true,
-        isNull: false
+        notNull: true
       }
     },
     stock: {
@@ -34,7 +34,7 @@ Product.init(
       allowNull: false,
       validate: {
         isNumeric: true,
-        isNull: false
+        notNull: true
       }
     },
     category_id: {

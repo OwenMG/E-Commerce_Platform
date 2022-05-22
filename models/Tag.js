@@ -17,7 +17,7 @@ Tag.init(
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
-        isNull: false
+        notNull: true
       }
     }
   },
