@@ -54,8 +54,8 @@ router.put('/:id', async (req, res) => {
         },
       }
     )
-    .then((updatedBook)=> {
-      res.json(updatedBook);
+    .then((updatedCategory)=> {
+      res.json(updatedCategory);
     })
   } catch (err) {
     res.status(500).json(err);
@@ -70,8 +70,8 @@ router.delete('/:id', async (req, res) => {
         id: req.params.id
       }
     })
-    .then((deletedProduct)=>{
-      res.json(deletedProduct);
+    .then((deletedCategory)=>{
+      res.json(deletedCategory);
     })
   } catch (err) {
     res.status(500).json(err);
