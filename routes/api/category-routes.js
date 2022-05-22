@@ -70,8 +70,8 @@ router.delete('/:id', async (req, res) => {
         id: req.params.id
       }
     })
-    .then((deletedBook)=>{
-      res.json(deletedBook);
+    .then((deletedProduct)=>{
+      res.json(deletedProduct);
     })
   } catch (err) {
     res.status(500).json(err);
